@@ -15,13 +15,13 @@ time.sleep(5)
 
 while True:
     image = ImageGrab.grab()
-    pixelcolor = image.getpixel((math.floor(screenwidth * 0.919921875), math.floor(screenheight * 0.789583333333)))
-    if pixelcolor == (102, 153, 40):
+    pixelcolor = image.getpixel((math.floor(screenwidth * 0.9), math.floor(screenheight * 0.77)))
+    if pixelcolor == (115, 141, 69):
         print("Buy Is Avaliable")
-        pyautogui.moveTo((math.floor(screenwidth * 0.919921875), math.floor(screenheight * 0.789583333333)))
+        pyautogui.moveTo(math.floor(screenwidth * 0.932421875), math.floor(screenheight * 0.824305555553))
         for i in range(1, 10):
             pyautogui.click()
-        pyautogui.moveTo(2355, 1137)
+        pyautogui.moveTo(math.floor(screenwidth * 0.9), math.floor(screenheight * 0.77))
         pyautogui.click()
         time.sleep(random.uniform(0.02, 0.03))
         pyautogui.moveTo(500, 500)
@@ -31,3 +31,4 @@ while True:
     time.sleep(random.uniform(0.7, 1))
     keyboard.press('e')
     keyboard.release('e')
+    time.sleep(0.3)

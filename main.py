@@ -17,7 +17,7 @@ while True:
     image = ImageGrab.grab()
     pixelcolor = image.getpixel((math.floor(screenwidth * 0.9), math.floor(screenheight * 0.77)))
     if pixelcolor == (115, 141, 69):
-        print("Buy Is Avaliable")
+        print("Buy Is Available")
         pyautogui.moveTo(math.floor(screenwidth * 0.932421875), math.floor(screenheight * 0.824305555553))
         for i in range(1, 10):
             pyautogui.click()
